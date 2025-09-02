@@ -99,6 +99,42 @@ main{
     margin-left: 50px;
 }
 
+/* --- Estilos para o contêiner --- */
+.qualidades {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+/* --- Estilos para as caixas individuais --- */
+.qualidades-box {
+    flex: 1 1 200px; 
+    
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #00000033;
+    border-radius: 8px; 
+}
+
+/* --- Media Query para Responsividade --- */
+/* Em telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .qualidades {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .qualidades-box {
+        width: 90%; 
+        max-width: 400px; 
+    }
+}
+
+.img-qualidades{
+    width: 80px;
+}
+
 li{
     display: inline-block;
     margin: 20px;
