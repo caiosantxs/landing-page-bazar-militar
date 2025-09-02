@@ -95,8 +95,8 @@ main{
 .soldiersminimals{
     width: 300px;
     height: auto;
-    margin-right: 200px;
-    margin-left: 50px;
+    margin-right: 100px;
+    margin-left: 260px;
 }
 
 /* --- Estilos para o contêiner --- */
@@ -134,6 +134,31 @@ main{
 .img-qualidades{
     width: 80px;
 }
+
+.lista-servicos{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    margin-top: 20px;
+    margin: 30px 30px;
+}
+
+.servicos{
+    color: white;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.servicos-box{
+    flex: 1 1 200px; 
+    
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #00000033;
+    border-radius: 8px; 
+}
+
 
 li{
     display: inline-block;
