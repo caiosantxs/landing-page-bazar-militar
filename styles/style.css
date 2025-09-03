@@ -24,6 +24,7 @@ main{
 }
 
 #title{
+    font-family: "Bungee", sans-serif;
     color: black;
     flex-direction: column;
     line-height: 10px;
@@ -80,6 +81,7 @@ main{
 }
 
 .titulo{
+    font-family: "Bungee", sans-serif;
     margin: 0px;
     font-size: 28px;
 }
@@ -108,7 +110,7 @@ main{
 }
 
 /* --- Estilos para as caixas individuais --- */
-.qualidades-box {
+.infos-box {
     flex: 1 1 200px; 
     
     padding: 30px;
@@ -117,15 +119,19 @@ main{
     border-radius: 8px; 
 }
 
-/* --- Media Query para Responsividade --- */
-/* Em telas menores que 768px (tablets e celulares) */
+.infos-box:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px #89ecaf;
+}
+
 @media (max-width: 768px) {
     .qualidades {
         flex-direction: column; 
         align-items: center; 
     }
 
-    .qualidades-box {
+    .infos-box {
         width: 90%; 
         max-width: 400px; 
     }
@@ -140,25 +146,56 @@ main{
     flex-wrap: wrap; 
     gap: 20px; 
     justify-content: center; 
-    margin-top: 20px;
-    margin: 30px 30px;
+    margin-top: 40px;
 }
+
+.qualidades {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
 
 .servicos{
-    color: white;
+    margin-top: 80px;
+}
+
+.servicos-titulo h3{
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.img-servicos{
+    width: 50px;
+}
+
+.inicio-visitus{
     margin-top: 100px;
-    margin-left: 30px;
-}
-
-.servicos-box{
-    flex: 1 1 200px; 
-    
-    padding: 30px;
     text-align: center;
-    box-shadow: 0px 0px 10px #00000033;
-    border-radius: 8px; 
 }
 
+.visitus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list-visitus{
+    display: flex;
+    flex-direction: column;
+}
+
+.visitus-box{
+    flex: 1 1 200px; 
+    padding-left: 300px;
+    padding-right: 300px;
+    text-align: center;
+    margin-top: 10px;
+    
+    border-radius: 8px;
+    border: 1px solid #ddd; 
+}
 
 li{
     display: inline-block;
@@ -170,9 +207,9 @@ h1{
 }
 
 h2{
-    font-size: 56px;
+    font-size: 60px;
     line-height: 52px;
-    font-family: poppinsmedium;
+    font-family: "Bungee", sans-serif;
 }
 
 aside{
