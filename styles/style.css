@@ -81,6 +81,10 @@ main{
     margin-top: 5px;
 }
 
+.contats img{
+    margin-top: 17px;
+}
+
 .infos{
     background-color: #FFFFFF;
     padding: 50px 100px;
@@ -139,7 +143,7 @@ main{
 .infos-box:hover {
 
     transform: translateY(-5px);
-    box-shadow: 0px 5px 15px #89ecaf;
+    box-shadow: 0px 5px 15px #868884;
 }
 
 @media (max-width: 768px) {
@@ -221,6 +225,26 @@ main{
 .produtos{
     margin-top: 80px;
     text-align: center;
+}
+
+.titulinhoinho{
+    font-family: "Bungee", sans-serif;
+    color: white;
+    flex-direction: column;
+    line-height: 0px;
+    margin-left: 30px;
+}
+
+.visitus-box{
+    flex: 1 1 200px; 
+    
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;    
+}
+
+.visitus-box p{
+    line-height: 2px;
 }
 
 li{
